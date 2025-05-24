@@ -25,7 +25,7 @@ const Question: React.FC<QuestionProps> = ({
             <ul className={styles.answerList}>
                 {question.answers.map((answer, index) => {
                     // Determine if this answer is the correct one
-                    const isCorrect = feedback && answer === question.correct_answer;
+                    // const isCorrect = feedback && answer === question.correct_answer;
                     // For incorrect feedback, highlight the correct answer
                     const answerClass =
                         feedback === 'correct'
